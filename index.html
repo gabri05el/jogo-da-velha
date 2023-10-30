@@ -3,55 +3,38 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jogo Da velha Basico</title>
         <link rel="stylesheet" href="./Css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <title>Jogo da Velha</title>
+        <link rel="stylesheet" href="./Css/responsividade.css">
+        <script defer src="./Js/script.js"></script>
     </head>
     <body>
-        <div class="select-box">
-            <header>Jogo da Velha</header>
-            <div class="content">
-                <div class="title">Com qual quer jogar?</div>
-                <div class="option">
-                    <button class="playerX">Jogador (X)</button>
-                    <button class="playerO">Jogador (O)</button>
+        <main>
+            <section class="conteudo">
+                <div class="titulo">
+                    <p>Jogo Da velha</p>
                 </div>
-            </div>
-        </div>
-    
-        <div class="play-board">
-            <div class="details">
-                <div class="players">
-                    <span class="Xturn">Vez do X</span>
-                    <span class="Oturn">Vez do O</span>
-                    <div class="slider"></div>
+                <table class="jogo">
+                    <tr>
+                        <td class="quadrado q1" onclick="joga(this)"></td>
+                        <td class="quadrado" onclick="joga(this)"></td>
+                        <td class="quadrado q2" onclick="joga(this)"></td>
+                    </tr>
+                    <tr>
+                        <td class="quadrado" onclick="joga(this)"></td>
+                        <td class="quadrado" onclick="joga(this)"></td>
+                        <td class="quadrado" onclick="joga(this)"></td>
+                    </tr>
+                    <tr>
+                        <td class="quadrado q3" onclick="joga(this)"></td>
+                        <td class="quadrado" onclick="joga(this)"></td>
+                        <td class="quadrado q4" onclick="joga(this)"></td>
+                    </tr>
+                </table>
+                <div>
+                    <button type="button" onclick="reinicia()" class="botao">Reinicie</button>
                 </div>
-            </div>
-            <div class="play-area">
-                <section>
-                    <span class="box1"></span>
-                    <span class="box2"></span>
-                    <span class="box3"></span>
-                </section>
-                <section>
-                    <span class="box4"></span>
-                    <span class="box5"></span>
-                    <span class="box6"></span>
-                </section>
-                <section>
-                    <span class="box7"></span>
-                    <span class="box8"></span>
-                    <span class="box9"></span>
-                </section>
-            </div>
-        </div>
-    
-        <div class="result-box">
-            <div class="won-text"></div>
-            <div class="btn">
-                <button>Replay</button>
-            </div>
-        </div>
+            </section>
+        </main>
     </body>
-    <script src="./Js/script.js"></script>
 </html>
