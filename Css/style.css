@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+:root {
+    --fonte-do-jogo: 'Permanent Marker', cursive;
+    --fonte-de-texto: 'Space Mono', monospace;
+
+    --cor-branco-01: #d9e3eb;
+    --cor-cinza-01: #313952;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--cor-branco-01);
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.titulo {
+    color: var(--cor-cinza-01);
+    font-family: var(--fonte-de-texto);
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+}
+
+.jogo {
+    background-color: var(--cor-cinza-01);
+    padding: 0.8rem;
+    border-radius: 1rem;
+}
+
+.quadrado {
+    background-color: var(--cor-branco-01);
+    color: var(--cor-cinza-01);
+    text-align: center;
+    font-family: var(--fonte-do-jogo);
+    font-size: 3rem;
+    width: 130px;
+    height: 130px;
+}
+
+.q1 {
+    border-top-left-radius: 1rem;
+}
+.q2 {
+    border-top-right-radius: 1rem;
+}
+.q3 {
+    border-bottom-left-radius: 1rem;
+}
+.q4 {
+    border-bottom-right-radius: 1rem;
+}
+
+.botao {
+    background-color: var(--cor-cinza-01);
+    color: var(--cor-branco-01);
+    cursor: pointer;
+    font-family: var(--fonte-de-texto);
+    font-size: 1.6rem;
+    padding: 1rem;
+    margin: 1rem;
+    border: 3px solid var(--cor-cinza-01);
+    border-radius: 1rem;
+    transition: all 0.8s;
+}
+
+.botao:hover {
+    background-color: var(--cor-branco-01);
+    color: var(--cor-cinza-01);
+}
